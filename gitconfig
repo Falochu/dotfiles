@@ -1,0 +1,7 @@
+[user]
+	name = Ryan Kelley
+	email = rkelley@stellar.aero
+[diff]
+	tool = meld 
+[merge]
+	tool = meld 
