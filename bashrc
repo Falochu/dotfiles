@@ -14,7 +14,9 @@ GREEN="$(tput setaf 2)"
 RESET="$(tput sgr0)"
 
 source ~/.git-prompt.sh
-export PS1='${BLACK}${GREEN_BG}\u@\h $(__git_ps1 "${CYAN_BG}%s ")${BLUE_BG}\w${RESET} '
+# Version with user@host
+#export PS1='\[${BLACK}\]\[${GREEN_BG}\]\u@\h $(__git_ps1 "\[${CYAN_BG}\]%s ")\[${BLUE_BG}\]\w\[${RESET}\] ' 
+export PS1='\[${BLACK}\]$(__git_ps1 "\[${CYAN_BG}\]%s ")\[${BLUE_BG}\]\w\[${RESET}\] '
 
 set -o vi
 
